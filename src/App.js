@@ -30,9 +30,7 @@ class App extends Component {
     this.onDismiss = this.onDismiss.bind(this);
   }
   onDismiss(id) {
-   function isNotId(item) {
-      return item.objectID !== id;
-    }
+    const  isNotId = item => item.objectID !== id; 
     const updatedList = this.state.list.filter(isNotId);
   }
 
